@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import {styles} from "../styles";
-import {navLinks} from "../constants"
-import { logo, menu, close } from '../assets';
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -27,9 +27,22 @@ const Navbar = () => {
             <span className="sm:block hidden">| Portfolio</span>
           </p>
         </Link>
+
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${
+                active === link.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
