@@ -30,7 +30,7 @@ const Computers = () => {
         object={computer.scene}
         //set location of the model
         scale={0.75}
-        position={[0, -3.8, -1.5]}
+        position={[0, -3.7, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>

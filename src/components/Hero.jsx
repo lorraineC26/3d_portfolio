@@ -22,10 +22,15 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915eff]">Lorraine</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
-            Versatile Full-Stack Web Developer merging biotech and medical
-            writing skills. <br className="sm:block hidden" />
-            Proficient in end-to-end development, passionate about tech
-            solutions across diverse fields, including healthcare and beyond.
+            Versatile{" "}
+            <span className="text-[#915eff]">Full-Stack Web Developer</span>{" "}
+            with roots in biotech and medical writing.{" "}
+            <br className="sm:block hidden" />
+            Passionate about crafting transformative tech solutions across
+            diverse sectors,{" "}
+            <span className="text-[#915eff]">
+            from healthcare to limitless horizons.
+            </span>
           </p>
         </div>
       </div>
@@ -43,7 +48,7 @@ const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: 'loop'
+                repeatType: "loop",
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
