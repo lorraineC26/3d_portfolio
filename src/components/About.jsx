@@ -14,11 +14,14 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
-        {/* fadeIn accepts 4 params: direction, type, delay(s), ration of animation */}
+      {/* fadeIn accepts 4 params: direction, type, delay(s), ration of animation */}
+      <motion.p 
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
         I'm a dynamic Full-Stack Web Developer with a background in nutrition
         and biotech. From biotech internship to medical writing role, I've
-        developed strong communication, teamwork, and problem-solving skills. As
+        developed strong communication, teamwork, and problem-solving skills.<br/> As
         a Junior Frontend Developer at a start-up, I tackled projects using
         TypeScript, JavaScript, React, and NextJS. With a knack for synthesizing
         complex information, I'm poised to craft impactful solutions. Let's
