@@ -38,6 +38,30 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // check if we've already mobile device & change the isMobile var
+  useEffect(() => {
+    // add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // are we on the device lower than 500px? set the init value of 'isMobile'
+    setIsMobile(mediaQuery.matches);
+
+    // define a cb fx as a listener for changes to the media query
+    const handelMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    //add the cb fx as an event listener for changes to the media query
+    mediaQuery.addEventListener("change", handelMediaQueryChange);
+
+    // remove the listener when the comp is unmounted
+    return() => {
+      mediaQuery.removeEventListener("change", handelMediaQueryChange);
+    };
+  }, []);
+
   return (
     <Canvas
       frameloop="demand"
@@ -54,7 +78,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2} // only rotate arounf a specific angle
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
+        <Computers isMobile={isMobile}/>
       </Suspense>
 
       <Preload all />
