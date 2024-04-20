@@ -10,30 +10,31 @@ const Ball = (props) => {
   return (
     // add float propertity to ball
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.25}/>
-      <directionalLight position={[0,0,0.05]} />
+      <ambientLight intensity={0.25} />
+      <directionalLight position={[0, 0, 0.05]} />
 
       {/* the actual model */}
       <mesh castShadow receiveShadow scale={2.75}>
         {/* provide the shape */}
         <icosahedronGeometry args={[1, 1]} />
         {/* provide the color and texture */}
-        <meshStandardMaterial 
-          color="#fff8eb"
+        <meshStandardMaterial
+          color="#f8fcfc"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
         />
 
         {/* provide more texture and material appearing on the balls */}
-        <Decal 
+        <Decal
           map={decal}
           position={[0, 0, 1]}
+          rotation={[2 * Math.PI, 0, 6.25]}
+          flatShading
         />
-
       </mesh>
     </Float>
-  )
+  );
 }
 
 const BallCanvas = ({ icon }) => {
