@@ -20,7 +20,14 @@ const SectionWrapper = (Component, idName) =>
         viewport={{once: true, amount:0.25}}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
+        {/* assign each section with `#` + its `idName` at the end of url -> unique endpoint */}
+        {/* allow scroll icon scrolling down to About section  */}
+        <span className="hash-span" id={idName}>
+          &nbsp;
+        </span>
+
         <Component />
+
       </motion.section>
     )
   }
