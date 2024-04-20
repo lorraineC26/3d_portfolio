@@ -21,15 +21,10 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915eff]">Lorraine</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
-            Versatile{" "}
-            <span className="text-[#915eff]">Full-Stack Web Developer</span>{" "}
+            Versatile{" "} <span className="text-[#915eff]">Full-Stack Web Developer</span>{" "}
             with roots in biotech and medical writing.{" "}
-            <br className="sm:block hidden" />
-            Passionate about crafting transformative tech solutions across
-            diverse sectors,{" "}
-            <span className="text-[#915eff]">
-              from healthcare to limitless horizons.
-            </span>
+            {/* <br className="sm:block hidden" /> */}
+            Passionate about crafting transformative tech solutions{" "} <span className="text-[#915eff]">from healthcare to limitless horizons.</span>
           </p>
         </div>
       </div>
