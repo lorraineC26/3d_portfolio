@@ -12,8 +12,25 @@ const Ball = (props) => {
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25}/>
       <directionalLight position={[0,0,0.05]} />
+
+      {/* the actual model */}
       <mesh castShadow receiveShadow scale={2.75}>
+        {/* provide the shape */}
         <icosahedronGeometry args={[1, 1]} />
+        {/* provide the color and texture */}
+        <meshStandardMaterial 
+          color="#fff8eb"
+          polygonOffset
+          polygonOffsetFactor={-5}
+          flatShading
+        />
+
+        {/* provide more texture and material appearing on the balls */}
+        <Decal 
+          map={decal}
+          position={[0, 0, 1]}
+        />
+
       </mesh>
     </Float>
   )
