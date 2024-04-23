@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
 
-const ProjectCard = ({ index, name, descripition, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     // index * 0.5 = faded one by one
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.075)}>
@@ -29,22 +29,28 @@ const ProjectCard = ({ index, name, descripition, tags, image, source_code_link 
 
           {/* github redirection icon */}
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {/* open page in a new link */}
             <div
-               onClick={()=> window.open(source_code_link, "_blank")}
-               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              // allow to open page in a new link
+              onClick={()=> window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={github}
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
-
+              {/* we can create another div like the img tag above to link to the deploy page */}
             </div>
-
           </div>
 
         </div>
+
+      {/* For name & description for each project */}
+      <div className="mt-5">
+        <h3 >{name}</h3>
+        <p>{description}</p>
+
+      </div>
       </Tilt>
     </motion.div>
   )
