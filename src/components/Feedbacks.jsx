@@ -10,12 +10,31 @@ const FeedbackCard = ({index, testimonial, name, designation, company, image}) =
     <motion.div>
       <p
         variants={fadeIn("", "spring", index * 0.5, 0.075)}
-        className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+        className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
       >
-        {testimonial}
+        <p className="text-white font-black text-[48px]">"</p>
+
+        <div className="mt-1 ">
+          <p>{testimonial}</p>
+
+          {/* For name, sign, position, image of person */}
+          <div className='mt-7 flex justify-between items-center gap-1'>
+            <div className='flex-1 flex flex-col'>
+              <p>
+                <span>@</span> {name}
+              </p>
+
+              <p>
+                {designation} of {company}
+              </p>
+
+            </div>
+
+          </div>
+        </div>
       </p>
     </motion.div>
-  )
+  );
 }
 
 const Feedbacks = () => {
