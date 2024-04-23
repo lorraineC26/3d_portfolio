@@ -29,6 +29,12 @@ const FeedbackCard = ({index, testimonial, name, designation, company, image}) =
               </p>
             </div>
 
+            <img
+              src={image}
+              alt={`feedback by ${name}`}
+              className='w-10 h-10 rounded-full object-cover'
+            />
+
           </div>
         </div>
       </p>
@@ -42,10 +48,11 @@ const Feedbacks = () => {
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testmonails.</h2>
+          <h2 className={styles.sectionHeadText}>Testmonials.</h2>
         </motion.div>
       </div>
 
+      {/* the negative margin allows the feedback cards go over the motion div above which contain the title */}
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index)=>(
           <FeedbackCard 
@@ -60,4 +67,4 @@ const Feedbacks = () => {
   )
 }
 
-export default Feedbacks
+export default SectionWrapper(Feedbacks, "");
