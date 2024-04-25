@@ -29,7 +29,7 @@ const App = () => {
 
         <div className="relative z-0">
           {/* display 3D starts here */}
-          <Contact />
+          <Contact /> 
           <StarsCanvas />
         </div>
       </div>
