@@ -29,37 +29,37 @@ const Contact = () => {
     e.preventDefault(); // otherwise, the borswer will refresh
     setLoading(true);
 
-    // Emails template ID: template_d6zm7uk
-    // Service ID: service_85drvvt
-    // Public key: sVGn_-lgW6UIfR2_6
-    emailjs.send(
-      "service_85drvvt",
-      "template_d6zm7uk",
-      {
-        form_name: form.name,
-        to_name: "Lorraine",
-        from_email: form.email,
-        to_email: "lorraine.qycai@gmail.com",
-        message: form.message,
-      },
-      "sVGn_-lgW6UIfR2_6"
-    )
-    .then(()=>{
-      setLoading(false)
-      alert("Thank you! I'll get back to you as soon as possible.")
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          form_name: form.name,
+          to_name: "Lorraine",
+          from_email: form.email,
+          to_email: "lorraine.qycai@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you! I'll get back to you as soon as possible.");
 
-      setForm({
-        name:"",
-        email:"",
-        message:""
-      })
-    }, (error) => {
-      setLoading(false)
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
 
-      console.log(error);
-
-      alert('Oops, something went wrong.')
-    })
+          alert("Oops, something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
