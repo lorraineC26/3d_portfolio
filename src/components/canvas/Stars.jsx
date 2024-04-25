@@ -8,8 +8,15 @@ const Stars = (props) => {
 
   const sephere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
 
+  // make starts moving
+  useFrame((state, delta) => {
+    ref.current.rotation.x -= delta / 10;
+    ref.current.rotation.x -= delta / 15;
+
+  })
+
   return (
-    <group>
+    <group rotation={[0, 0, Math.PI / 4 ]}>
       <Points ref={ref} positions={sephere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
@@ -25,7 +32,7 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
   return (
-    <div className="w-full h-full absolute inset-0 z-[-1]">
+    <div className="w-full h-auto absolute inset-0 z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
