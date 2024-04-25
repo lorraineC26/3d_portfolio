@@ -23,7 +23,12 @@ const EarthCanvas = () => {
       shadows
       frameloop="demand"
       gl={{ preserveDrawingBuffer: true }}
-      camera={{}}
+      camera={{
+        fov:45, //make earth larger
+        near:0.1,
+        far:200,
+        position:[-4, 3, 6]
+      }}
     >
       {/* Suspense is going to ensure while our model is loading, we have sth to show */}
       <Suspense fallback={<CanvasLoader />}>
