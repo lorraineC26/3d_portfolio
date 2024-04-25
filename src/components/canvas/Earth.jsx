@@ -10,6 +10,9 @@ const Earth = () => {
   return (
     <primitive
       object={earth.scene}
+      scale={2.5}
+      position-y={0} // ensur we can rotate horizontally
+      rotation-y={0}
     />
   );
 };
