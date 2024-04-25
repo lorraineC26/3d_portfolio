@@ -30,6 +30,8 @@ const Contact = () => {
       // flex-[0.75] means we want to take 3/4 screen
       className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
     >
+      <p className={styles.sectionSubText}>Get in touch</p>
+      <h3 className={styles.heroHeadText}>COntact.</h3>
 
     </motion.div>
 
