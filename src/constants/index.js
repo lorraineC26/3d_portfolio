@@ -8,6 +8,7 @@ import {
   html,
   css,
   reactjs,
+  ruby,
   redux,
   tailwind,
   nodejs,
@@ -23,6 +24,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  nextjs,
+  sass,
+  postgresql,
 } from "../assets";
 
 export const navLinks = [
@@ -42,7 +46,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     icon: web,
   },
   {
@@ -50,7 +54,7 @@ const services = [
     icon: reactjs,
   },
   {
-    title: "Frontend Developer",
+    title: "Technical Writing",
     icon: backend,
   },
   {
@@ -64,10 +68,10 @@ const technologies = [
     name: "HTML 5",
     icon: html,
   },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -81,6 +85,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -89,12 +97,20 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "Sass",
+    icon: sass,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
   },
+  // {
+  //   name: "Ruby on Rails",
+  //   icon: ruby,
+  // },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
     name: "Three JS",
@@ -107,10 +123,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
