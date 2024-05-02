@@ -31,9 +31,16 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// import carrent from "./carrent.png";
+// import jobit from "./jobit.png";
+// import tripguide from "./tripguide.png";
+import swipeToWork from "./swipeToWork.png";
+import photolabs from "./photolabs.png";
+import jungle from "./jungle.png";
+import bookstore from "./bookstore.png";
+
+
+
 
 export {
   logo,
@@ -61,11 +68,12 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   ruby,
   nextjs,
   sass,
   postgresql,
+  swipeToWork,
+  photolabs,
+  jungle,
+  bookstore,
 };

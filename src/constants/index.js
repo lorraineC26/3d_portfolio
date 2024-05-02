@@ -20,13 +20,14 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   nextjs,
   sass,
   postgresql,
+  swipeToWork,
+  photolabs,
+  jungle,
+  bookstore,
 } from "../assets";
 
 export const navLinks = [
@@ -210,30 +211,46 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Swipe to Work",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A dating app clone that takes in the user's job-related preferences and fetches jobs from an external API to display jobs that match those preferences in an easy-to-read format",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "NodeJS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Express",
         color: "pink-text-gradient",
       },
+      {
+        name: "PostgreSQL",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sass",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Auth0",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: swipeToWork,
+    source_code_link: "https://github.com/lorraineC26/swipe-to-work",
   },
   {
-    name: "Job IT",
+    name: "Photolabs",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "React-based single-page application that allows users to view photos in different contexts.",
     tags: [
       {
         name: "react",
@@ -247,30 +264,68 @@ const projects = [
         name: "scss",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "Express",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: photolabs,
+    source_code_link: "https://github.com/lorraineC26/photolabs",
+  },
+  {
+    name: "Jungle",
+    description:
+      "A mini e-commerce application allows users to purchase different types of plants via browsing through the homepage, sorting plants by category, reading descriptions, etc.",
+    tags: [
+      {
+        name: "Rails",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "PostgreSQL",
         color: "pink-text-gradient",
       },
+      {
+        name: "Stripe",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: jungle,
+    source_code_link: "https://github.com/lorraineC26/jungle-rails",
+  },
+  {
+    name: "aLittleBookstore",
+    description:
+      "A single-page application allows bookstore owners to manage book via broswing basic book info, editing details, deleting and adding new books.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Sass",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: bookstore,
+    source_code_link:
+      "https://github.com/lorraineC26/bookstore-nextjs-migration",
   },
 ];
 
