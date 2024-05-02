@@ -57,6 +57,18 @@ const About = () => {
         technical abilities, including TypeScript, React, NextJS, etc. With a
         talent for simplifying complex concepts, I'm ready to create meaningful
         solutions.
+        <br />
+        <br />
+        <a
+          href="https://flowcv.com/resume/e7qs6cpgtp"
+          target="_blank" // open a new tab
+          // no opener: prevent potential security exploits where the newly opened tab could manipulate the contents of the originating tab;
+          // no referrer: the destination website won't know the URL of the page that referred the user to it
+          rel="noopener noreferrer"
+          className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+        >
+          Download Resume
+        </a>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
