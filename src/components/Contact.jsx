@@ -72,10 +72,28 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.heroHeadText}>Contact.</h3>
 
+        <div className="mt-1.5 flex flex-wrap gap-5 md:gap-2 lg:gap-5 justify-start">
+          <a
+            href="https://www.linkedin.com/in/lorraine-qinyi-cai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-4xl icon-[devicon--linkedin]"></span>
+          </a>
+
+          <a
+            href="https://github.com/lorraineC26"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-4xl icon-[mdi--github]"></span>
+          </a>
+        </div>
+
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-10 flex flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -123,12 +141,11 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
-
       </motion.div>
     </div>
   );
