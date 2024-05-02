@@ -65,8 +65,9 @@ const About = () => {
           // no opener: prevent potential security exploits where the newly opened tab could manipulate the contents of the originating tab;
           // no referrer: the destination website won't know the URL of the page that referred the user to it
           rel="noopener noreferrer"
-          className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          className="flex items-center bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
         >
+          <span className="mr-1.5 text-2xl icon-[ph--download]"></span>
           Download Resume
         </a>
       </motion.p>
