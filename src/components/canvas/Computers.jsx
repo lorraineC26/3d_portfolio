@@ -30,7 +30,7 @@ const Computers = ({ isMobile }) => {
         object={computer.scene}
         //set location of the model
         scale={isMobile ? 0.6 : 0.65}
-        position={isMobile ? [0, -3.0, -2.2] : [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3.0, -2.2] : [0, -3.6, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -57,10 +57,11 @@ const ComputersCanvas = () => {
     mediaQuery.addEventListener("change", handelMediaQueryChange);
 
     // remove the listener when the comp is unmounted
-    return() => {
+    return () => {
       mediaQuery.removeEventListener("change", handelMediaQueryChange);
     };
   }, []);
+
 
   return (
     <Canvas
@@ -75,14 +76,14 @@ const ComputersCanvas = () => {
         {/* allow us to move model left and right */}
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2} // only rotate arounf a specific angle
+          maxPolarAngle={Math.PI / 2} // only rotate around a specific angle
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile}/>
+        <Computers isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
-    </Canvas> 
+    </Canvas>
   );
 };
 
