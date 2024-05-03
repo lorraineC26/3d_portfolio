@@ -1,7 +1,9 @@
 # My 3D Portfolio Website
-This repository contains the source code for my 3D portfolio website, showcasing my skills and projects as a web developer.
+This repository contains the source code for my 3D portfolio website, showcasing my skills and projects as a web developer.<br/><br/>
+🌸 The website is deployed and accessible at [lorraine-cai-portfolio.vercel.app](https://lorraine-cai-portfolio.vercel.app/).
 
-## Tech Stack:
+
+## 🧰 Tech Stack:
 - **React.js**: Used for building the user interface and managing state.
 - **Three.js**: Empowered the creation of 3D elements and animations.
 - **React Three Fiber**: Simplified the integration of Three.js with React components.
@@ -10,7 +12,7 @@ This repository contains the source code for my 3D portfolio website, showcasing
 - **Vite**: Provided fast development and optimized production builds.
 - **Tailwind CSS**: Utilized for styling and responsive design.
 
-## Features:
+## ✨ Features:
 - **3D Hero Section**: Personalized 3D desktop model allowing users to interactively rotate and explore.
 - **Interactive Experience and Work Sections**: Engaging animations powered by Framer Motion.
 - **3D Skills Section**: Demonstrates skills using 3D geometries through Three.js and React Three Fiber.
