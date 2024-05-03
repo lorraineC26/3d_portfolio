@@ -69,7 +69,7 @@ const Contact = () => {
         // flex-[0.75] means we want to take 3/4 screen
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText}>SEND ME A MESSAGE</p>
         <h3 className={styles.heroHeadText}>Contact.</h3>
 
         <div className="mt-1.5 flex flex-wrap gap-5 md:gap-2 lg:gap-5 justify-start">
@@ -133,7 +133,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-button py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {/* check the sending state to show the proper button */}
             {loading ? "Sending..." : "Send"}

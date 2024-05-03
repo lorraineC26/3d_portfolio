@@ -11,28 +11,28 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           {/* the round symbol */}
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-5 h-5 rounded-full bg-[#f25f4c]" />
           {/* the line below the symbol */}
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-1 sm:h-80 h-40 orange-gradient" />
         </div>
 
         {/* self intro paragraph */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Lorraine</span>
+            Hi, I'm <span className="text-[#f25f4c]">Lorraine</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
             Versatile{" "}
-            <span className="text-[#915eff]">Full-Stack Web Developer</span>{" "}
+            <span className="text-[#f25f4c]">Full-Stack Web Developer</span>{" "}
             with roots in biotech and medical writing.{" "}
             {/* <br className="sm:block hidden" /> */}
             Passionate about crafting transformative tech solutions{" "}
-            <span className="text-[#915eff]">
+            <span className="text-[#f25f4c]">
               from healthcare to limitless horizons.
             </span>
           </p>
 
-         {/* <a href="#contact">Let's Connect✨</a> */}
+          {/* <a href="#contact">Let's Connect✨</a> */}
         </div>
       </div>
 
