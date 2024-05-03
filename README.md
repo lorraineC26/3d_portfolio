@@ -1,8 +1,24 @@
-# React + Vite
+# My 3D Portfolio Website
+This repository contains the source code for my 3D portfolio website, showcasing my skills and projects as a web developer.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack:
+- **React.js**: Used for building the user interface and managing state.
+- **Three.js**: Empowered the creation of 3D elements and animations.
+- **React Three Fiber**: Simplified the integration of Three.js with React components.
+- **React Three Drei**: Enhanced the 3D scene with additional components and utilities.
+- **Email JS**: Implemented email functionality for the contact section.
+- **Vite**: Provided fast development and optimized production builds.
+- **Tailwind CSS**: Utilized for styling and responsive design.
 
-Currently, two official plugins are available:
+## Features:
+- **3D Hero Section**: Personalized 3D desktop model allowing users to interactively rotate and explore.
+- **Interactive Experience and Work Sections**: Engaging animations powered by Framer Motion.
+- **3D Skills Section**: Demonstrates skills using 3D geometries through Three.js and React Three Fiber.
+- **Animated Projects**: Dynamic project sections with animated transitions.
+- **Contact Section with 3D Earth Model**: Integration of a 3D earth model with email functionality.
+- **3D Stars**: Background display of progressively generated stars using Three.js.
+- **Consistent Animations**: Cohesive animations implemented throughout the website.
+- **Responsive Design**: Ensures optimal display and functionality across various devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+----------------
+Feel free to reach out for any questions or feedback. Happy coding! 🚀
