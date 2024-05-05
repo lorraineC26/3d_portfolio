@@ -5,7 +5,7 @@ import { technologies } from "../constants"
 const Tech = () => {
   return (
     <>
-      <h2 className="font-black text-white lg:text-[50px] sm:text-[40px] xs:text-[30px] text-[40px] mb-2 text-center">
+      <h2 className="font-black text-white md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mb-2 text-center">
         My Skill Sets
       </h2>
 
