@@ -17,7 +17,7 @@ const Earth = () => {
         object={rocket.scene}
         // scale={2.5} // originally for earth
         scale={0.2}
-        position-y={0} // ensur we can rotate horizontally
+        position-y={0.9} // ensur we can rotate horizontally
         rotation-y={0}
       />
     </mesh>
