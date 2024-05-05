@@ -19,15 +19,15 @@ const Hero = () => {
         {/* self intro paragraph */}
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#f25f4c]">Lorraine</span>
+            Hi, I'm <span className="text-[#5cc7d5]">Lorraine</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Versatile{" "}
-            <span className="text-[#f25f4c]">Full-Stack Web Developer</span>{" "}
+            <span className="text-[#5cc7d5]">Full-Stack Web Developer</span>{" "}
             with roots in biotech and medical writing.{" "}
             {/* <br className="sm:block hidden" /> */}
             Passionate about crafting transformative tech solutions{" "}
-            <span className="text-[#f25f4c]">
+            <span className="text-[#5cc7d5]">
               from healthcare to limitless horizons.
             </span>
           </p>

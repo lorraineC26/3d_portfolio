@@ -30,8 +30,8 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={sanrio.scene}
         //set location of the model
-        scale={isMobile ? 0.6 : 0.95}
-        position={isMobile ? [0, -2.0, -2.2] : [0, -2.8, -1.5]}
+        scale={isMobile ? 0.7 : 0.95}
+        position={isMobile ? [0, -2.8, -1] : [0, -2.8, -1.5]}
         rotation={[-0.1, 1, -0.1]} // updated rotation degree for cinnamoroll
       />
     </mesh>
