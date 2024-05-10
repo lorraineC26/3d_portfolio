@@ -9,14 +9,15 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  // const computer = useGLTF("./desktop_pc/scene.gltf");
+  const sanrio = useGLTF("./cinnamoroll/scene.gltf");
 
   return (
     // use mesh instead of div for 3d models
     <mesh>
       <hemisphereLight intensity={3.8} groundColor="black" />
       <pointLight intensity={1} />
-      <spotLight 
+      <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
@@ -24,14 +25,14 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
-      
+
       {/* the actual 3d comupter model */}
       <primitive
-        object={computer.scene}
+        object={sanrio.scene}
         //set location of the model
-        scale={isMobile ? 0.6 : 0.65}
-        position={isMobile ? [0, -3.7, -2.2] : [0, -3.6, -1.5]}
-        rotation={[-0.01, -0.6, -0.1]}
+        scale={isMobile ? 0.7 : 0.95}
+        position={isMobile ? [0, -2.8, -1] : [0, -2.8, -1.5]}
+        rotation={[-0.1, 1, -0.1]} // updated rotation degree for cinnamoroll
       />
     </mesh>
   );
