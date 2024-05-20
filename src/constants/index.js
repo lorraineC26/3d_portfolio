@@ -28,6 +28,7 @@ import {
   photolabs,
   jungle,
   bookstore,
+  sushiQueen,
 } from "../assets";
 
 export const navLinks = [
@@ -326,6 +327,27 @@ const projects = [
     image: bookstore,
     source_code_link:
       "https://github.com/lorraineC26/bookstore-nextjs-migration",
+  },
+  {
+    name: "SushiQueen",
+    description:
+      "A front-end web application simulates a modern online Japanese food restaurant, offering users a glimpse into its mission, popular dishes, and current trending.",
+    tags: [
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AOS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sushiQueen,
+    source_code_link: "https://github.com/lorraineC26/sushiqueen",
   },
 ];
 

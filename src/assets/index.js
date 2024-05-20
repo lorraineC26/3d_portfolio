@@ -36,7 +36,7 @@ import swipeToWork from "./swipeToWork.png";
 import photolabs from "./photolabs.png";
 import jungle from "./jungle.png";
 import bookstore from "./bookstore.png";
-
+import sushiQueen from "./sushiQueen.png";
 
 
 
@@ -74,4 +74,5 @@ export {
   photolabs,
   jungle,
   bookstore,
+  sushiQueen,
 };
