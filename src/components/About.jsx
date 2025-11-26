@@ -46,20 +46,21 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        My coding journey started in my final summer at McGill, studying
-        Nutrition. Serendipitously, I discovered 'Programming in Life Science,'
-        where Python became my tool for patient weight control, DNA analysis,
-        etc. I was hooked from the start, finding the whole experience
-        incredibly fascinating.
+        My coding journey started during my final summer at McGill, where I was
+        studying Nutrition. I stumbled upon a course called 'Programming in Life
+        Science,' and suddenly Python became my tool for analyzing patient
+        weight control data, DNA sequences, and more. I was hooked right away.
+        There was something incredibly fascinating about solving real problems
+        through code.
         <br />
-        From biotech to web development at a startup, I've refined
-        communication, teamwork, and problem-solving skills while shaping my
-        technical abilities, including TypeScript, React, NextJS, etc. With a
-        talent for simplifying complex concepts, I'm ready to create meaningful
-        solutions.
+        Since then, I've gone from biotech to web development at a startup,
+        where I've sharpened my communication, teamwork, and problem-solving
+        skills alongside my technical abilities in TypeScript, React, NextJS,
+        and more. I have a knack for breaking down complex concepts into simple
+        terms, and I'm excited to build solutions that make a real impact.
         <br />
         <br />
-        <a
+        {/* <a
           href="https://flowcv.com/resume/e7qs6cpgtp"
           target="_blank" // open a new tab
           // no opener: prevent potential security exploits where the newly opened tab could manipulate the contents of the originating tab;
@@ -69,7 +70,7 @@ const About = () => {
         >
           <span className="mr-1.5 text-2xl icon-[ph--download]"></span>
           Download Resume
-        </a>
+        </a> */}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
