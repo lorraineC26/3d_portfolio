@@ -29,12 +29,11 @@ const Hero = () => {
           >
             Versatile{" "}
             <span className="text-[#5fdfef]">Full-Stack Web Developer</span>{" "}
-            with roots in biotech and medical writing.{" "}
+            building thoughtful, user-centered web applications.{" "}
             {/* <br className="sm:block hidden" /> */}
-            Passionate about crafting transformative tech solutions{" "}
-            <span className="text-[#5fdfef]">
-              from healthcare to limitless horizons.
-            </span>
+            Bringing a{" "}
+            <span className="text-[#5fdfef]">unique cross-disciplinary</span>{" "}
+            perspective from medical writing.
           </p>
 
           {/* <a href="#contact">Let's Connect✨</a> */}
