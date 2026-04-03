@@ -29,6 +29,7 @@ import {
   jungle,
   bookstore,
   sushiQueen,
+  AceReady,
 } from "../assets";
 
 export const navLinks = [
@@ -211,6 +212,39 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "AceReady",
+    description:
+      "Practice job interviews with a real-time AI voice interviewer built on Vapi and Next.js. Get instant structured feedback and performance scores powered by Google Gemini.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Google Gemini",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vapi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: AceReady,
+    source_code_link: "https://github.com/lorraineC26/AceReady-ai-interview",
+  },
   {
     name: "Swipe to Work",
     description:

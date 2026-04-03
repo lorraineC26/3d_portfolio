@@ -37,6 +37,7 @@ import photolabs from "./photolabs.png";
 import jungle from "./jungle.png";
 import bookstore from "./bookstore.png";
 import sushiQueen from "./sushiQueen.png";
+import AceReady from "./AceReady.png";
 
 
 
@@ -75,4 +76,5 @@ export {
   jungle,
   bookstore,
   sushiQueen,
+  AceReady,
 };
