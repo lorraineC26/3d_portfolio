@@ -38,6 +38,7 @@ import jungle from "./jungle.png";
 import bookstore from "./bookstore.png";
 import sushiQueen from "./sushiQueen.png";
 import AceReady from "./AceReady.png";
+import huaweiUX from "./huaweiUX.jpg";
 
 
 
@@ -77,4 +78,5 @@ export {
   bookstore,
   sushiQueen,
   AceReady,
+  huaweiUX,
 };

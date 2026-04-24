@@ -30,6 +30,7 @@ import {
   bookstore,
   sushiQueen,
   AceReady,
+  huaweiUX,
 } from "../assets";
 
 export const navLinks = [
@@ -248,7 +249,7 @@ const projects = [
   {
     name: "Swipe to Work",
     description:
-      "A dating app clone that takes in the user's job-related preferences and fetches jobs from an external API to display jobs that match those preferences in an easy-to-read format",
+      "A dating app clone that takes in the user's job-related preferences and fetches jobs from an external API to display jobs that match those preferences in an easy-to-read format.",
     tags: [
       {
         name: "react",
@@ -310,6 +311,32 @@ const projects = [
     ],
     image: photolabs,
     source_code_link: "https://github.com/lorraineC26/photolabs",
+  },
+  {
+    name: "HUAWEI Health UX Design",
+    description:
+      "A UX design project focuses on redesigning the HUAWEI Health app for iPhone users to address significant usability and reliability issues.",
+    tags: [
+      {
+        name: "figma prototyping",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "information architecture",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MoSCoW",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "usability testing",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: huaweiUX,
+    source_code_link:
+      "https://drive.google.com/file/d/1qzQtQsFiJl8r8bECzOyWQaGnPqUa2jRM/view?usp=sharing",
   },
   {
     name: "Jungle",
