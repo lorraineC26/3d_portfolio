@@ -52,6 +52,7 @@ const About = () => {
         DNA sequences. I quickly discovered a passion for solving real-world
         problems through code.
         <br />
+        <br />
         After working as a medical writer, I pursued further education in tech
         and transitioned into software development at startups, where I've
         sharpened my communication, teamwork, and problem-solving skills

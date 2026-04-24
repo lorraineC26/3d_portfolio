@@ -57,7 +57,7 @@ const services = [
     icon: reactjs,
   },
   {
-    title: "Technical Writing",
+    title: "AI Developer",
     icon: backend,
   },
   {
@@ -67,21 +67,21 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
   // {
   //   name: "CSS 3",
   //   icon: css,
   // },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "React JS",
@@ -92,12 +92,12 @@ const technologies = [
     icon: nextjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
   },
   {
     name: "Sass",
@@ -336,32 +336,32 @@ const projects = [
     image: jungle,
     source_code_link: "https://github.com/lorraineC26/jungle-rails",
   },
-  {
-    name: "aLittleBookstore",
-    description:
-      "A single-page application allows bookstore owners to manage book via broswing basic book info, editing details, deleting and adding new books.",
-    tags: [
-      {
-        name: "NextJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Redux",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Sass",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: bookstore,
-    source_code_link:
-      "https://github.com/lorraineC26/bookstore-nextjs-migration",
-  },
+  // {
+  //   name: "aLittleBookstore",
+  //   description:
+  //     "A single-page application allows bookstore owners to manage book via broswing basic book info, editing details, deleting and adding new books.",
+  //   tags: [
+  //     {
+  //       name: "NextJS",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "React",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "Redux",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "Sass",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: bookstore,
+  //   source_code_link:
+  //     "https://github.com/lorraineC26/bookstore-nextjs-migration",
+  // },
   {
     name: "SushiQueen",
     description:
