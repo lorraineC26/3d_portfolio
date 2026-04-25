@@ -4,6 +4,9 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import globe from "./globe.svg";
+import presentation from "./presentation.svg";
+import play from "./play.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -49,6 +52,9 @@ export {
   mobile,
   web,
   github,
+  globe,
+  presentation,
+  play,
   menu,
   close,
   css,
