@@ -2,10 +2,17 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, globe, presentation, play } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+const LINK_ICONS = [
+  { key: "source_code_link", icon: github, alt: "github" },
+  { key: "demo_link",        icon: globe,  alt: "live demo" },
+  { key: "slides_link",      icon: presentation, alt: "slide deck" },
+  { key: "video_link",       icon: play,   alt: "recording" },
+];
 
 const ProjectCard = ({
   index,
@@ -14,9 +21,13 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  demo_link,
+  slides_link,
+  video_link,
 }) => {
+  const linkValues = { source_code_link, demo_link, slides_link, video_link };
+
   return (
-    // index * 0.5 = faded one by one
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.075)}>
       <Tilt
         options={{
@@ -27,27 +38,25 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          {/* project thumbnails */}
           <img
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          {/* github redirection icon */}
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              // allow to open page in a new link
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-              {/* we can create another div like the img tag above to link to the deploy page */}
-            </div>
+          {/* ICON redirections */}
+          <div className="absolute inset-0 flex justify-end items-start gap-2 m-3 card-img_hover">
+            {LINK_ICONS.map(({ key, icon, alt }) =>
+              linkValues[key] ? (
+                <div
+                  key={key}
+                  onClick={() => window.open(linkValues[key], "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img src={icon} alt={alt} className="w-1/2 h-1/2 object-contain" />
+                </div>
+              ) : null
+            )}
           </div>
         </div>
 

@@ -245,6 +245,7 @@ const projects = [
     ],
     image: AceReady,
     source_code_link: "https://github.com/lorraineC26/AceReady-ai-interview",
+    demo_link: "https://ai-mock-interview-aceready.vercel.app/",
   },
   {
     name: "Swipe to Work",
@@ -335,8 +336,10 @@ const projects = [
       },
     ],
     image: huaweiUX,
-    source_code_link:
+    slides_link:
       "https://drive.google.com/file/d/1qzQtQsFiJl8r8bECzOyWQaGnPqUa2jRM/view?usp=sharing",
+    video_link:
+      "https://drive.google.com/file/d/1FfYuBFXjZgE25RggVdKx5ua0vLLZyibb/view?usp=sharing",
   },
   {
     name: "Jungle",
@@ -409,6 +412,7 @@ const projects = [
     ],
     image: sushiQueen,
     source_code_link: "https://github.com/lorraineC26/sushiqueen",
+    demo_link: "https://lorrainec26.github.io/sushiqueen/",
   },
 ];
 
