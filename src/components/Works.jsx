@@ -94,7 +94,8 @@ const Works = () => {
         >
           Following projects reflect my ability to solve complex problems, work
           with different technologies, and manage projects effectively. Each
-          project is briefly described with links to code repositories.
+          includes a brief description with links to source code, live demos,
+          and project materials where available.
         </motion.p>
       </div>
 
