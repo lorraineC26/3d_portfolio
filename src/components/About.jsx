@@ -23,7 +23,8 @@ const ServiceCard = ({ index, title, icon }) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <img src={icon} alt={title} className="w-fit h-24 object-contain" />
+          {/* <span className={`${icon} text-white`} style={{ fontSize: "64px" }} role="img" aria-label={title} /> */}
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>

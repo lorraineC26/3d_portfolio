@@ -19,12 +19,12 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import nextjs from "./tech/nextjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import ruby from "./tech/ruby.png";
-import nextjs from "./tech/nextjs.png";
 import sass from "./tech/sass.png";
 import postgresql from "./tech/postgresql.png";
 
@@ -34,6 +34,10 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import service_nextjs from "./service_nextjs.png";
+import service_ai from "./service_ai.png";
+import service_fullstack from "./service_fullstack.png";
+import service_productEng from "./service_productEng.png";
 
 import swipeToWork from "./swipeToWork.png";
 import photolabs from "./photolabs.png";
@@ -51,6 +55,10 @@ export {
   creator,
   mobile,
   web,
+  service_nextjs,
+  service_ai,
+  service_fullstack,
+  service_productEng,
   github,
   globe,
   presentation,
