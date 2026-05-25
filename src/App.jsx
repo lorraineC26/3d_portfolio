@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import {
   About,
   Contact,
@@ -12,7 +13,7 @@ import {
 } from "./components";
 
 const App = () => {
-  
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -29,10 +30,11 @@ const App = () => {
 
         <div className="relative z-0">
           {/* display 3D starts here */}
-          <Contact /> 
+          <Contact />
           <StarsCanvas />
         </div>
       </div>
+      <Analytics />
     </BrowserRouter>
   );
 };
