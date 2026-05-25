@@ -17,7 +17,7 @@ const SectionWrapper = (Component, idName) =>
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
-        viewport={{once: true, amount:0.25}}
+        viewport={{once: true, amount: 'some'}}
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
       >
         {/* assign each section with `#` + its `idName` at the end of url -> unique endpoint */}
