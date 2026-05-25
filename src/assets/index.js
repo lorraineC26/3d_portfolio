@@ -39,12 +39,12 @@ import service_ai from "./service_ai.png";
 import service_fullstack from "./service_fullstack.png";
 import service_productEng from "./service_productEng.png";
 
-import swipeToWork from "./swipeToWork.png";
-import photolabs from "./photolabs.png";
-import jungle from "./jungle.png";
-import bookstore from "./bookstore.png";
-import sushiQueen from "./sushiQueen.png";
-import AceReady from "./AceReady.png";
+import swipeToWork from "./swipeToWork.jpg";
+import photolabs from "./photolabs.jpg";
+import jungle from "./jungle.jpg";
+import bookstore from "./bookstore.jpg";
+import sushiQueen from "./sushiQueen.jpg";
+import AceReady from "./AceReady.jpg";
 import huaweiUX from "./huaweiUX.jpg";
 
 
